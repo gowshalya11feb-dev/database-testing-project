@@ -17,14 +17,19 @@ the results with the expected values.
 - Duplicate values (customer emails, film titles)
 - Valid values (active column, film rating)
 - Invalid values (negative payment amounts)
+- Table relationships using JOINs (customer-address, film-language,
+  payment-customer, inventory-film, rental-customer, rental-inventory)
+- Business rules (return date not before rental date, replacement
+  cost not lower than rental rate, payment customer matches rental
+  customer, film length greater than zero)
 
 ## Results Summary
-Total test cases: 10
-Passed: 10
+Total test cases: 20
+Passed: 20
 Failed: 0
 
 ## Project Files
-- database_tests.sql : all 10 SQL test queries
+- database_tests.sql : all 20 SQL test queries
 - test_cases.xlsx : test case document with expected and actual results
 - screenshots/ : proof of each test execution
 
